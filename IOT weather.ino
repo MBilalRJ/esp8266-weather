@@ -8,9 +8,9 @@ LiquidCrystal_I2C lcd(0x27, 16, 2);
 DHT dht(D3, DHT11); //(sensor pin,sensor type)
 BlynkTimer timer;
 
-char auth[] = "AH12GD73F3781G232H3G2"; //Enter the Auth code which was send by Blink
-char ssid[] = "Paisley Park";  //Enter your WIFI Name
-char pass[] = "stardust";  //Enter your WIFI Password
+char auth[] = ""; //Enter the Auth code which was send by Blink
+char ssid[] = "";  //Enter your WIFI Name
+char pass[] = "";  //Enter your WIFI Password
 
 void weather() {
   float h = dht.readHumidity();
